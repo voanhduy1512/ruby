@@ -7,6 +7,8 @@ MAINTAINER Võ Anh Duy <anhduy@siliconstraits.vn>
 RUN apt-get update -y
 RUN apt-get install -y curl
 
+RUN apt-get install -y git
+
 # install rvm and ruby
 RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
 
