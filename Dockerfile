@@ -14,11 +14,11 @@ RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
 RUN apt-get install -y phantomjs
 
 # postgres library
-RUN apt-get install libpq-dev
+RUN apt-get install -y libpq-dev
 
 # mysql library
-RUN apt-get install libmysqlclient-dev
+RUN apt-get install -y libmysqlclient-dev
 
 # misc
 RUN apt-get install -y ImageMagick
-RUN apt-get install nodejs
+RUN apt-get install -y nodejs
